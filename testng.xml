@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Practice Suite">
+
+    <test name="Login Tests">
+        <classes>
+            <class name="Lesson13.SauceLoginTest"/>
+            <class name="Lesson13.SauceLoginPomTest"/>
+        </classes>
+    </test>
+
+    <test name="Page Element Tests">
+        <classes>
+            <class name="Lesson14.DropdownTest"/>
+            <class name="Lesson14.CheckboxTest"/>
+            <class name="Lesson14.AlertTest"/>
+            <class name="Lesson14.TableTest"/>
+        </classes>
+    </test>
+
+</suite>

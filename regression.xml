@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Suite">
+
+    <test name="Sauce Tests">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Lesson13.SauceLoginTest"/>
+            <class name="Lesson13.SauceLoginPomTest"/>
+            <class name="Lesson13.SauceErrorTest"/>
+            <class name="Lesson13.SauceCartTest"/>
+        </classes>
+    </test>
+    
+    <test name="Internet Tests">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="Lesson14.WaitTest"/>
+            <class name="Lesson14.DropdownTest"/>
+            <class name="Lesson14.CheckboxTest"/>
+            <class name="Lesson14.AlertTest"/>
+            <class name="Lesson14.TableTest"/>
+
+        </classes>
+    </test>
+
+</suite>
