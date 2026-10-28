@@ -8,6 +8,7 @@ public class HelloTest {
 	@Test
 	public void helloTest() {
 		System.out.println("Hello from TestNG");
+		System.out.println("Hello from TestNG");
 		
 		Assert.assertTrue(5>3);
 	}
