@@ -17,9 +17,17 @@ public class ConfigReader {
 	}
 	
 	public static String get(String key) {
+
+		String fromCommandLine = System.getProperty(key);
+				
+		if(fromCommandLine != null && !fromCommandLine.trim().isEmpty()){
+			return fromCommandLine.trim();
+		}
+		
 		String value = properties.getProperty(key);
 		
-		if(value == null) {
+		if (value == null)
+		{
 			throw new RuntimeException("Missing key in config.properties: " + key);
 		}
 		
